@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<iostream>
+using namespace std;
 int x = 1;
 //define a namespace within a namespace
 namespace shared {
@@ -16,16 +17,41 @@ namespace shared {
 
 }
 
+
+
 //if no scope is specified,search first in the local scope,
 //and then in the global scope
+//int main() {
+	//int x = 0;
+	//printf("%d\n", x);//default access to local variables
+	//printf("%d\n", ::x);//access global variables
+	//printf("%p\n", rand);//print the function address
+	//printf("%d\n", shared::rand);//access variables within the specified scope
+	//printf("%d\n", shared::A::x);
+	//printf("%d\n", shared::B::x);
+	//std::cout << "hello world\n" << std::endl;
+	//return 0;
+//}
+
+//void Func1(int a , int b, int c ) {
+//	cout << "a=" << a << endl;
+//	cout << "b=" << b << endl;
+//	cout << "c=" << c << endl;
+//}
+//int main() {
+//	Func1(1,2,3);
+//	return 0;
+//}
+
+//function overloading
+//there can be funtions with the same name,
+// but with diffent numbers or types of parameters
+void swap(int* p1, int* p2) {
+
+}
+void swap(double* p1, double* p2) {
+
+}
 int main() {
-	int x = 0;
-	printf("%d\n", x);//default access to local variables
-	printf("%d\n", ::x);//access global variables
-	printf("%p\n", rand);//print the function address
-	printf("%d\n", shared::rand);//access variables within the specified scope
-	printf("%d\n", shared::A::x);
-	printf("%d\n", shared::B::x);
-	std::cout << "hello world\n" << std::endl;
 	return 0;
 }
